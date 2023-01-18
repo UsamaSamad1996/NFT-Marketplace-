@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavigationBar from "./Components/NavigationBar";
+import HeroSection from "./Components/HeroSection";
+import TrendingCollection from "./Components/TrendingCollection";
+import TopCreators from "./Components/TopCreators";
+import BrowseCategories from "./Components/BrowseCategories";
+import DiscoverMore from "./Components/DiscoverMore";
+import NFThighlights from "./Components/NFThighlights";
+import HowItWorks from "./Components/HowItWorks";
+import Subscribe from "./Components/Subscribe";
+import Footer from "./Components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavigationBar />
+      <HeroSection />
+      <TrendingCollection />
+      <TopCreators />
+      <BrowseCategories />
+      <DiscoverMore />
+      <NFThighlights />
+      <HowItWorks />
+      <Subscribe />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
